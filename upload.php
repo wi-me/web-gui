@@ -15,12 +15,34 @@
 		 if(move_uploaded_file($_FILES['uploaded']['tmp_name'], $target)) 
 		 { 
 		 echo "The file ". basename( $_FILES['uploadedfile']['name']). " has been uploaded"; 
-		 sleep(5);
-		 header('Location: 10.73.172.70/default.html') ;
+		 sleep(15);
+		 redirect("default.html");
+		 //header('Location: www.google.com');
 		 } 
 		 else 
 		 { 
 		 echo "Sorry, there was a problem uploading your file. You fail."; 
 		 } 
 	 } 
+
+function redirect($url)
+{
+    if (!headers_sent())
+    {
+        header('Location: '.$url);
+        exit;
+    }
+    else
+    {
+        echo '<script type="text/javascript">';
+        echo 'window.location.href="'.$url.'";';
+        echo '</script>';
+        echo '<noscript>';
+        echo '<meta http-equiv="refresh" content="0;url='.$url.'" />';
+        echo '</noscript>'; 
+        exit;
+    }
+}
+
+
  ?> 
