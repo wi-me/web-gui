@@ -4,7 +4,7 @@
  $ok=1; 
  
  //make sure ok is 1
-if ($uploaded_type =="mp3") 
+if ($uploaded_type == "mp3") 
 { 
 
 	if(move_uploaded_file($_FILES['uploaded']['tmp_name'], $target)) 
