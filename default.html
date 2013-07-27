@@ -3,30 +3,60 @@
 </div>
 
 <div align="center">
-
-
 <body text="#00FFFF">
 
-
 <style type="text/css" rel="stylesheet">
-#mysubmit { background-color: #cfc; font-size: 30%; 
-    padding: 20px; font-weight: bold; }
+#choosefile { background-color: #000; font-size: 225%; 
+    padding: 20px; font-weight: bold; font-family: impact; color: cyan;}
 </style>
+<input name = "uploaded" input type="file" id="choosefile" value="Choose File" />
+
+
+<table>
+<tr>
+<td style= "width: 100%;">
+
+<table>
+<tr>
+<td> 
 <form enctype="multipart/form-data" action="upload.php" method="POST">
-<input name = "uploaded" input type="file" id="mysubmit" value="Choose File" />
-
-
-<div align="middle">
-
-
 <style type="text/css" rel="stylesheet">
-#mysubmit { background-color: #000; font-size: 250%; 
-    padding: 20px; font-weight: bold; font-family: impact; color: cyan; }
+#mypush { background-color: #000; font-size: 300%; 
+    padding: 20px; padding-top: 80px; padding-bottom: 50px; font-weight: bold; font-family: impact; color: cyan;}
 </style>
-
-<input type="submit" id="mysubmit" value="Upload"/>
-<!---<input type = "submit" id="mysubmit" value = "Upload" />--->
+<input type="submit" id="mypush" value="PUSH!" display: inline-block; }/>
 </form>
+</td>			
+
+<td> 
+<form enctype="multipart/form-data" action="upload.php" method="POST">
+<style type="text/css" rel="stylesheet">
+#myupload { background-color: #000; font-size: 300%; 
+    padding: 20px; font-weight: bold; font-family: impact; color: deeppink; }
+</style>
+<input type="submit" id="myupload" value="Upload"/>
+
+<!---<input type = "submit" id="mysubmit" value = "Upload" />---->
+</form>
+
+</td>
+
+<td>
+<form enctype="multipart/form-data" action="upload.php" method="POST">
+<style type="text/css" rel="stylesheet">
+#mypop { background-color: #000; font-size: 300%; 
+    padding: 34px; padding-top: 80px; padding-bottom: 50px; font-weight: bold; font-family: impact; color: cyan; }
+</style>
+<input type="submit" id="mypop" value="POP!" display: inline-block; }/>
+</form>
+</td>
+</tr>
+
+</td>
+</tr>
+</table>
+
+
 
 <body bgcolor="#000000"> 
 
