@@ -1,5 +1,5 @@
 <div>
-	<img style="display:block; position: relative; margin:auto" src="Wi Me.png" height="550" width="1250"/>
+<img style="display:block; position: relative; margin:auto" src="Wi Me.png" height="550" width="1250"/>
 </div>
 
 <div align="center">
@@ -13,8 +13,8 @@
     padding: 20px; font-weight: bold; }
 </style>
 <form enctype="multipart/form-data" action="upload.php" method="POST">
-<input type="file" id="mysubmit" value="Choose File" />
-</form>
+<input name = "uploaded" input type="file" id="mysubmit" value="Choose File" />
+
 
 <div align="middle">
 
@@ -23,8 +23,14 @@
 #mysubmit { background-color: #000; font-size: 250%; 
     padding: 20px; font-weight: bold; font-family: impact; color: cyan; }
 </style>
-<form enctype="multipart/form-data" action="upload.php" method="POST">
-<input type="submit" id="mysubmit" value="Upload" onclick="JavaScript:alert('Your song has been put into the queue. Please enjoy the music until your song is played. Cheers!')"/>
+
+<input type="submit" id="mysubmit" value="Upload"/>
+<!---<input type = "submit" id="mysubmit" value = "Upload" />--->
 </form>
 
-<body bgcolor="#000000">
+<body bgcolor="#000000"> 
+
+<!--<form enctype="multipart/form-data" action="upload.php" method="POST">
+Please choose a file: <input name="uploaded" type="file" /><br />
+<input type="submit" value="Upload" />
+</form>--> 
